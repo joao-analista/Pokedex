@@ -1,0 +1,56 @@
+/* Estilo dos cartões do Pokémon */
+.pokemon-card {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  width: 150px;
+  transition: transform 0.3s ease;
+}
+
+.pokemon-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+}
+
+.pokemon-card h4 {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.pokemon-card p {
+  font-size: 14px;
+  color: #777;
+}
+
+.pokemon-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  /* 5 colunas */
+  gap: 15px;
+  /* Espaço entre os itens */
+  width: 100%;
+  /* Garantir que a grid ocupe toda a largura disponível */
+  margin-top: 20px;
+  padding: 10px;
+  justify-items: center;
+  /* Alinha os itens no centro */
+}
+
+.pokemon-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  /* Distância entre o título e a barra de pesquisa */
+}
